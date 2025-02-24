@@ -4,6 +4,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+.img {
+  width: 100%; /* Ensure the width takes up the full container */
+  height: 500px; /* Increase the height to your desired size */
+  background-size: cover; /* Ensure the background image covers the entire div */
+  background-position: center; /* Center the background image */
+}
+
 
 body {
   background: #E5E5E5;
@@ -404,12 +411,20 @@ font-family: 'Lobster', cursive;
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
   -webkit-animation: fade-in 20s ease-in;
           animation: fade-in 20s ease-in;
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
 }
+
+.image-caption {
+  text-align: center; /* Center the text */
+  font-size: 16px; /* Adjust the font size */
+  color: #333; /* Choose a color for the text */
+  margin-top: 10px; /* Add some space above the text */
+}
+
 
 .wishesFont{
   font-family: 'Indie Flower', cursive;
